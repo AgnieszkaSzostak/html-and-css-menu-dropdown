@@ -1,6 +1,8 @@
 :root {
-    --color-alfa: rgb(220, 220, 220);
-    --color-beta: rgb(0, 200, 250);
+    --color-alfa: rgb(26, 77, 46);
+    --color-beta: rgb(255, 159, 41);
+    --color-gamma: rgb(250, 243, 227);
+    --color-delta: rgb(0, 0, 0);
 }
 
 .nav {
@@ -27,8 +29,12 @@
     height: 100%;
     text-decoration: none;
     width: 100%;
+    /* color: var(--color-gamma); */
 }
 
+.nav__link:hover, .dropdown__link:hover {
+    color: var(--color-delta);
+}
 .nav__item:hover > .nav__dropdown {
     display: block;
 }
@@ -38,6 +44,7 @@
     padding-top: 20px;
     position: absolute;
     left: 0;
+   
 }
 
 .dropdown__item {
@@ -53,7 +60,9 @@
     height: 100%;
     text-decoration: none;
     width: 100%;
+    color: var(--color-gamma);
 }
+
 
 
 
